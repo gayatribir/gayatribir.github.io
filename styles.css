@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo:hover{
+    opacity: 0.5;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: blue;
+    padding: 0 1.5rem;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0vh 2vh;
+    height: 100vh;
+}
+
+.homepage-font{
+    font-size: 50px;
+}
+
+
+.animation {
+    height:5vh;
+    overflow:hidden;
+    padding-left: 10px;
+  }
+  
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+
+  .intro-width {
+    height:5vh;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .name div {
+    color:#20a7d8;
+
+  }
+  .education div {
+    color:#CD921E;
+
+  }
+  .profession div {
+    color:#c10528;
+    
+  }
+
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    20% {margin-top: 0;}
+    33% {margin-top: -5vh;}
+    53% {margin-top: -5vh;}
+    66% {margin-top: -10vh;}
+    87% {margin-top: -10vh;}
+    100% {margin-top: 0;}
+  }
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.academic-body, .blog-body{
+    height: 95vh;
+    padding-top: 80px;
+    padding-left: 2rem;
+}
+.academic-body p{
+    padding-top: 10px;
+}
+
+.contact-body{
+    height: 95vh;
+    padding-top: 80px;
+    padding-left: 2rem;
+}
+
+.contact-flex{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.sm-icon{
+    width: 80px;
+}
+
+.grayout-hover:hover{
+    opacity: 0.5;
+}
+
+.hero, .academic-body, .contact-body, .blog-body{
+    background-image: url(images/subtle-prism.svg);
+  }
+
+.navbar{
+    display: flex;
+    background-color: #0000ff00;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-items{
+    list-style-type: none;
+}
+
+.nav-items .list-item{
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        background: #0000ff00;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 65px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: row;
+        padding: 0 0.01vw;
+    }
+    .list-item{
+        width: 20%;
+    }
+    .navbar a{
+        color: blue;
+    }
+    .logo:hover{
+        opacity: 0.5;
+    }
+}
+
+.navbar a{
+    color: blue;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(212, 0, 255);
+}
+.primary-icon{
+    height: 45px;
+}
+
+.blog-body p{
+    padding-top: 2vw
+}
+
+.wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(20deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate(15deg); }
+    60% { transform: rotate(-10deg); }
+    70% { transform: rotate(15deg); }
+    80% { transform: rotate(-10deg); }
+    90% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+  }
