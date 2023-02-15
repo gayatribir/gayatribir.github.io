@@ -61,10 +61,8 @@ nav a{
   }
   .profession div {
     color:#c10528;
-    
   }
 
-  
   @keyframes text-animation {
     0% {margin-top: 0;}
     20% {margin-top: 0;}
