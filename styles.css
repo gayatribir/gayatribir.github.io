@@ -16,13 +16,14 @@ nav a{
 }
 
 .column-left{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
     color: black;
     padding: 0vh 2vh;
     height: 100vh;
+    font-size: 147%;
 }
 
 .homepage-font{
@@ -36,7 +37,10 @@ nav a{
     padding-left: 10px;
   }
   
-  
+  .welcome{
+    justify-self: end;
+  }
+
   .animation div:first-child {
     animation: text-animation 8s infinite;
   }
